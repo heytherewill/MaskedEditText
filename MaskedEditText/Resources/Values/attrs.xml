@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="MaskedEditText">
+    <attr name="Mask" format="string"/>
+    <attr name="MaskFill" format="string"/>
+    <attr name="CharRepresentation" format="string"/>
+  </declare-styleable>
+</resources>
