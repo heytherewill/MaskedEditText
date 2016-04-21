@@ -91,7 +91,7 @@ namespace MaskedEditText
             }
         }
 
-        private char Representation
+        public char Representation
         {
             get
             {
@@ -104,7 +104,7 @@ namespace MaskedEditText
             }
         }
         
-        private char MaskFill
+        public char MaskFill
         {
             get
             {
