@@ -91,7 +91,7 @@ namespace MaskedEditText
             }
         }
 
-        private char Representation
+        public char Representation
         {
             get
             {
@@ -100,6 +100,19 @@ namespace MaskedEditText
             set
             {
                 _representation = value;
+                CleanUp();
+            }
+        }
+        
+        public char MaskFill
+        {
+            get
+            {
+                return _maskFill;
+            }
+            set
+            {
+                _maskFill = value;
                 CleanUp();
             }
         }
@@ -155,7 +168,6 @@ namespace MaskedEditText
             get
             {
                 return Hint != null;
-
             }
         }
 
