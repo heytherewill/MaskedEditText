@@ -103,6 +103,19 @@ namespace MaskedEditText
                 CleanUp();
             }
         }
+        
+        private char MaskFill
+        {
+            get
+            {
+                return _maskFill;
+            }
+            set
+            {
+                _maskFill = value;
+                CleanUp();
+            }
+        }
 
         public override IOnFocusChangeListener OnFocusChangeListener
         {
@@ -155,7 +168,6 @@ namespace MaskedEditText
             get
             {
                 return Hint != null;
-
             }
         }
 
