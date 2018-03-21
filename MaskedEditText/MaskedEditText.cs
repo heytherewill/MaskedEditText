@@ -165,19 +165,19 @@ namespace MaskedEditText
 
         private void Initialize(IAttributeSet attrs)
         {
-            var styledAttributes = Context.ObtainStyledAttributes(attrs, Resource.Styleable.MaskedEditText);
+            var styledAttributes = Context.ObtainStyledAttributes(attrs, ru.plusofonxamarin.Resource.Styleable.MaskedEditText);
             var count = styledAttributes.IndexCount;
 
             for (var i = 0; i < count; ++i)
             {
                 var attr = styledAttributes.GetIndex(i);
-                if (attr == Resource.Styleable.MaskedEditText_Mask)
+                if (attr == ru.plusofonxamarin.Resource.Styleable.MaskedEditText_Mask)
                 {
                     AddTextChangedListener(this);
 
                     _mask = styledAttributes.GetString(attr);
-                    _maskFill = (styledAttributes.GetString(Resource.Styleable.MaskedEditText_MaskFill) ?? " ")[0];
-                    _representation = (styledAttributes.GetString(Resource.Styleable.MaskedEditText_CharRepresentation) ?? "#")[0];
+                    _maskFill = (styledAttributes.GetString(ru.plusofonxamarin.Resource.Styleable.MaskedEditText_MaskFill) ?? " ")[0];
+                    _representation = (styledAttributes.GetString(ru.plusofonxamarin.Resource.Styleable.MaskedEditText_CharRepresentation) ?? "#")[0];
 
                     CleanUp();
 
